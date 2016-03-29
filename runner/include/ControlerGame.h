@@ -1,17 +1,16 @@
-#ifndef CONTROLER_H
-#define CONTROLER_H
-#include "BaseControler.h"
-#include "ControlerUser.h"
-#include "ControlerGame.h"
+#ifndef CONTROLERGAME_H
+#define CONTROLERGAME_H
+#include "../include/BaseControler.h"
+#include "../include/ControlerUser.h"
 
 class ControlerGame: public BaseControler
 {
     public:
-        createField();
+        void createField();
         /** Default constructor */
-        Controler();
+        ControlerGame();
         /** Default destructor */
-        virtual ~Controler();
+        virtual ~ControlerGame();
     protected:
     private:
         double score;

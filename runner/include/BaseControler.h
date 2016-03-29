@@ -1,6 +1,6 @@
 #ifndef BASECONTROLER_H
 #define BASECONTROLER_H
-#include "ConfigBase.h"
+#include "../include/ConfigBase.h"
 
 class BaseControler
 {

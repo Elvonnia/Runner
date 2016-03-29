@@ -15,9 +15,9 @@ class Display
 
     protected:
     private:
-        char m_obstacle = "O" ;
-        char m_nobstacle = " ";
-        char m_borderlines = "|";
+        char m_obstacle = 'O' ;
+        char m_nobstacle = ' ' ;
+        char m_borderlines = '|';
 
 };
 

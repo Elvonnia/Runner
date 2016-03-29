@@ -1,7 +1,7 @@
 #ifndef OBSTACLE_H
 #define OBSTACLE_H
-#include "ConfigObj.h"
-#include "ViewGame.h"
+#include "../include/ConfigObj.h"
+#include "../include/ViewGame.h"
 
 class Obstacle
 {

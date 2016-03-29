@@ -1,6 +1,6 @@
 #ifndef CONFIGOBJ_H_INCLUDED
 #define CONFIGOBJ_H_INCLUDED
-#include "ConfigBase.h"
+#include "../include/ConfigBase.h"
 
 class ConfigObj: public ConfigBase{
 

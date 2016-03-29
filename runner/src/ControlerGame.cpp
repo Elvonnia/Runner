@@ -1,13 +1,13 @@
-#include "Controler.h"
+#include "../include/ControlerGame.h"
 #include <iostream>
 using namespace std;
 
-Controler::Controler()
+ControlerGame::ControlerGame()
 {
     //ctor
 }
 
-Controler::~Controler()
+ControlerGame::~ControlerGame()
 {
     //dtor
 }
