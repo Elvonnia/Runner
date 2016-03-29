@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1459260112 source:d:\game project\runner\runner\src\character.cpp
+	"../include/Character.h"
+	<iostream>
+
+1459260112 d:\game project\runner\runner\include\character.h
+	"../include/ConfigChar.h"
+	"../include/ViewGame.h"
+
+1459260112 d:\game project\runner\runner\include\configchar.h
+	"../include/ConfigBase.h"
+
+1456594779 d:\game project\runner\runner\include\configbase.h
+
+1459260112 d:\game project\runner\runner\include\viewgame.h
+	"../include/ControlerGame.h"
+
+1459260112 d:\game project\runner\runner\include\controlergame.h
+	"../include/BaseControler.h"
+	"../include/ControlerUser.h"
+
+1459260112 d:\game project\runner\runner\include\basecontroler.h
+	"../include/ConfigBase.h"
+
+1459260112 d:\game project\runner\runner\include\controleruser.h
+	"../include/ViewGame.h"
+
+1459260112 source:d:\game project\runner\runner\src\controlergame.cpp
+	"../include/ControlerGame.h"
+	<iostream>
+
