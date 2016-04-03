@@ -1,12 +1,6 @@
 #ifndef CONFIGOBJ_H_INCLUDED
 #define CONFIGOBJ_H_INCLUDED
-#include "../include/ConfigBase.h"
 
-class ConfigObj: public ConfigBase{
-
-char sprite;
-char posx;
-
-};
+int objPosX = 10;
 
 #endif // CONFIGOBJ_H_INCLUDED

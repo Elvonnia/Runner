@@ -1,0 +1,7 @@
+#ifndef CONFIGFIELD_H_INCLUDED
+#define CONFIGFIELD_H_INCLUDED
+
+
+int speed = 5;
+
+#endif // CONFIGGIELD_H_INCLUDED

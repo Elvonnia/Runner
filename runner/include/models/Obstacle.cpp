@@ -1,4 +1,4 @@
-#include "../include/Obstacle.h"
+#include "./Obstacle.h"
 #include <iostream>
 using namespace std;
 

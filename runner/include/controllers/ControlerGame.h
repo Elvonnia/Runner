@@ -1,10 +1,8 @@
 #ifndef CONTROLERGAME_H
 #define CONTROLERGAME_H
-#include "../include/BaseControler.h"
-#include "../include/ControlerUser.h"
+#include "./ControlerUser.h"
 
-class ControlerGame: public BaseControler
-{
+class ControlerGame {
     public:
         void createField();
         /** Default constructor */

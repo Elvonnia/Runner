@@ -1,12 +1,11 @@
 #ifndef CONFIGCHAR_H_INCLUDED
 #define CONFIGCHAR_H_INCLUDED
-#include "../include/ConfigBase.h"
 
 
-class ConfigChar: public ConfigBase{
+int charPosY = 0;
 
-char spriteChar;
+int charPosX = 0;
 
-};
+
 
 #endif // CONFIGCHAR_H_INCLUDED

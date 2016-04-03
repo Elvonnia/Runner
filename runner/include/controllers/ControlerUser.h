@@ -1,6 +1,6 @@
 #ifndef CONTROLERUSER_H
 #define CONTROLERUSER_H
-#include "../include/ViewGame.h"
+#include "../views/ViewGame.h"
 
 class ControlerUser
 {

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../include/ControlerGame.h"
+#include "./controllers/ControlerGame.h"
 
 using namespace std;
 
 int main(char* argc[], int argv)
 {
-    //ctor
+    cout<< "coco" << endl;
 }

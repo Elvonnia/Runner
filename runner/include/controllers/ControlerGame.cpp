@@ -1,4 +1,5 @@
-#include "../include/ControlerGame.h"
+
+#include "./ControlerGame.h"
 #include <iostream>
 using namespace std;
 

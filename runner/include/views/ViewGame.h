@@ -1,6 +1,6 @@
 #ifndef VIEWGAME_H
 #define VIEWGAME_H
-#include "../include/ControlerGame.h"
+#include "../utils/ConfigViewGame.h"
 
 class ViewGame
 {

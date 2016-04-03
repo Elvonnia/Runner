@@ -1,4 +1,4 @@
-#include "../include/ViewGame.h"
+#include "./ViewGame.h"
 
 ViewGame::ViewGame()
 {
