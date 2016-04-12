@@ -5,10 +5,26 @@
 #ifndef RUNNER_MENU_H
 #define RUNNER_MENU_H
 
+#include "../views/ViewMenu.h"
 
-class Menu {
 
+class Menu{
+public:
 
+    int GetHaveMakeAChoice(){
+        return haveMakeAChoice;
+    }
+
+    void viewToShow();
+
+    void enterToGame();
+
+    void EnterToHelp();
+
+    void EnterToAbout();
+
+private:
+    int haveMakeAChoice = false;
 };
 
 

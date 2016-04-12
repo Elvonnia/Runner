@@ -1,9 +1,13 @@
 #include <iostream>
-#include "./controllers/ControlerGame.h"
+#include "./controllers/ContollerMenu.h"
 
 using namespace std;
 
-int main(char* argc[], int argv)
+int main( int argv,char** argc)
 {
-    cout<< "coco" << endl;
+    ControllerMenu *contollerMenu = new ControllerMenu();
+
+    contollerMenu->RunMenu();
+
+
 }

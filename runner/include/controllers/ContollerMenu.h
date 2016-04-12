@@ -2,13 +2,21 @@
 // Created by Guillaume on 03/04/2016.
 //
 
-#ifndef RUNNER_CONTOLLERMENU_H
-#define RUNNER_CONTOLLERMENU_H
+#ifndef RUNNER_CONTROLLERMENU_H
+#define RUNNER_CONTROLLERMENU_H
+
+#include "../models/Menu.h"
 
 
-class ContollerMenu {
+class ControllerMenu {
+public:
+    void RunMenu();
+
+private:
+    Menu *menu = new Menu();
+
 
 };
 
 
-#endif //RUNNER_CONTOLLERMENU_H
+#endif //RUNNER_CONTROLLERMENU_H
