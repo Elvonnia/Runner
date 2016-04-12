@@ -1,10 +1,18 @@
 #ifndef CONFIGCHAR_H_INCLUDED
 #define CONFIGCHAR_H_INCLUDED
 
+class ConfigChar{
+public:
+    static int charPosY(){
+        return 0;
+    };
 
-int charPosY = 0;
+    static int charPosX(){
+        return 0;
+    };
 
-int charPosX = 0;
+};
+
 
 
 

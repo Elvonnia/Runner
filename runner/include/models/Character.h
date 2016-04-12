@@ -6,8 +6,8 @@
 class Character
 {
     private:
-        int m_posY = charPosY;
-        int m_posX = charPosX;
+        int m_posY = ConfigChar::charPosY();
+        int m_posX = ConfigChar::charPosX();
         bool m_jump;
         bool m_alive;
 

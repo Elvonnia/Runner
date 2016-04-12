@@ -4,5 +4,8 @@
 
 #ifndef RUNNER_CONFIGVIEWMENU_H
 #define RUNNER_CONFIGVIEWMENU_H
+class configViewMenu{
+
+};
 
 #endif //RUNNER_CONFIGVIEWMENU_H

@@ -12,7 +12,7 @@ public:
     virtual ~Obstacle();
 
 private:
-    int m_posX = objPosX;
+    int m_posX = ConfigObj::objPosX();
 };
 
 #endif // OBSTACLE_H

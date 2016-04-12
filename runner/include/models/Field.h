@@ -18,7 +18,7 @@ private:
 
     int m_widthFieldSize = 3;
     int m_lenghtFieldsize = 10;
-    int m_speed = speed;
+    int m_speed = ConfigField::speed();
 };
 
 #endif // FIELD_H
