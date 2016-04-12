@@ -10,6 +10,10 @@ public:
         return 'P';
     };
 
+    static char spriteEmpty(){
+        return ' ';
+    };
+
 };
 
 

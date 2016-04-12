@@ -2,12 +2,6 @@
 #include <iostream>
 using namespace std;
 
-Character::Character()
-{
-    //ctor
-}
 
-Character::~Character()
-{
-    //dtor
-}
+int Character::m_posY = ConfigChar::charPosY();
+int Character::m_posX = ConfigChar::charPosX();

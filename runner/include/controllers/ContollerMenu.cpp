@@ -3,9 +3,11 @@
 //
 #include "ContollerMenu.h"
 
-void ControllerMenu::RunMenu() {
+bool ControllerMenu::RunMenu() {
     ViewMenu::defaultView();
     while (!menu->GetHaveMakeAChoice()){
         menu -> viewToShow();
     }
+    return false;
+
 }
