@@ -11,7 +11,7 @@ public:
     };
 
     static char spriteEmpty(){
-        return ' ';
+        return '_';
     };
 
 };

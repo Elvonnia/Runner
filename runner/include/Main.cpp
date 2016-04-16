@@ -1,19 +1,20 @@
 #include <iostream>
 #include "./controllers/ContollerMenu.h"
-#include "./controllers/ControllerGame.h"
+#include "controllers/ControllerGame.h"
 
 using namespace std;
 
 int main( int argv,char** argc)
 {
-    ControllerMenu *contollerMenu = new ControllerMenu();
-    ControllerGame *contollerGame = new ControllerGame();
+    ControllerMenu *controllerMenu = new ControllerMenu();
+    ControllerGame *controllerGame = new ControllerGame();
 
-    if(!contollerMenu->RunMenu()){
+    if(!controllerMenu->RunMenu()){
         if(ViewMenu::GetActualView() == 1){
-            contollerGame->runGame();
+            controllerGame->runGame();
         }
     }
+
 
 
 }

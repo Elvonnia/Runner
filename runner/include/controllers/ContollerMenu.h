@@ -6,7 +6,6 @@
 #define RUNNER_CONTROLLERMENU_H
 
 #include "../models/Menu.h"
-#include "./ControllerGame.h"
 
 
 class ControllerMenu {

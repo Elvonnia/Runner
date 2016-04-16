@@ -3,15 +3,30 @@
 
 #include "../utils/ConfigChar.h"
 
-class Character
-{
-    private:
-        static int m_posY;
-        static int m_posX;
-        static bool m_jump;
-        static bool m_alive;
+class Character {
+private:
+    int m_posY;
+    int m_posX;
+    bool m_jump = false;
+    bool m_alive = true;
 
-    public:
+public:
+    bool GetAlive() {
+        return m_alive;
+    }
+
+    void SetAlive(bool alive){
+        m_alive = alive;
+    }
+
+    bool GetJump(){
+        return m_jump;
+    };
+
+    void SetJump(bool jump){
+        m_jump = jump;
+    };
+
 
 };
 

@@ -2,23 +2,30 @@
 #define FIELD_H
 
 #include "../utils/ConfigField.h"
+#include "./Character.h"
 
 class Field {
 public:
     /** Default constructor */
-    Field();
+    void createField();
 
-    /** Default destructor */
-    virtual ~Field();
+    void changeField(int newValue);
 
-    //char createArrayline[10](char element1, char element2, char element3);
+    int createNewValue();
 
-protected:
+    int *GetArrayField(){
+        return arrayField;
+    }
+
+
+    Character GetCharacter(){
+        return *character;
+    }
+
 private:
-
-    int m_widthFieldSize = 3;
-    int m_lenghtFieldsize = 10;
+    Character *character = new Character();
     int m_speed = ConfigField::speed();
+    int arrayField[5];
 };
 
 #endif // FIELD_H

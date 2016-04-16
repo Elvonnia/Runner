@@ -4,19 +4,34 @@
 #include <iostream>
 
 #include "../utils/ConfigViewGame.h"
+
 class ViewGame {
 public:
 
-    static void changeFieldDataWithSprites(char arrayField[], char arrayArea[]);
+    static void changeFieldDataWithSprites(int arrayField[], bool jumpCharacter);
 
-    static void ShowView();
+    static void ShowView(bool jumpCharacter);
+
+    static char GetCharacter(){
+        return character;
+    }
+
+    static char GetObstacle(){
+        return obstacle;
+    }
+
+    static char GetEmpty(){
+        return empty;
+    };
+
+    static int KeyPressed();
+
 
 private:
     static char character;
     static char obstacle;
     static char empty;
     static char newArrayField[5];
-    static char newArrayArea[5];
 };
 
 #endif // VIEWGAME_H

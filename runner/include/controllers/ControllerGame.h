@@ -2,10 +2,11 @@
 #define CONTROLLERGAME_H
 
 #include "ControllerUser.h"
+#include "../models/Field.h"
+#include <iostream>
 
 class ControllerGame {
 public:
-    void createField();
 
     bool runGame();
     /** Default constructor */
@@ -15,6 +16,7 @@ public:
 protected:
 private:
     double score;
+    Field *field = new Field();
 
 };
 
