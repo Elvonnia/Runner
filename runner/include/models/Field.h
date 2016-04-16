@@ -3,6 +3,9 @@
 
 #include "../utils/ConfigField.h"
 #include "./Character.h"
+#include "stdlib.h"
+#include <stdio.h>
+#include <iostream>
 
 class Field {
 public:

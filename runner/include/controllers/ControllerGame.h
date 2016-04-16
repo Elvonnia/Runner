@@ -4,6 +4,9 @@
 #include "ControllerUser.h"
 #include "../models/Field.h"
 #include <iostream>
+#include <conio.h>
+#include<stdio.h>
+#include <windows.h>
 
 class ControllerGame {
 public:

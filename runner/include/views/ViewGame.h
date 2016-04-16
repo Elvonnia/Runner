@@ -1,13 +1,13 @@
 #ifndef VIEWGAME_H
 #define VIEWGAME_H
 
-#include <iostream>
-
 #include "../utils/ConfigViewGame.h"
+#include <conio.h>
+#include <iostream>
+#include <stdio.h>
 
 class ViewGame {
 public:
-
     static void changeFieldDataWithSprites(int arrayField[], bool jumpCharacter);
 
     static void ShowView(bool jumpCharacter);
