@@ -26,8 +26,11 @@ void ViewGame::ShowView(bool jumpCharacter) {
         cout << " "<< endl;
     }*/
     system("cls");
-    cout <<newArrayField[0] << newArrayField[1] << newArrayField[2] << newArrayField[3] << newArrayField[4] <<
-    newArrayField[5] << endl;
+    string field = "";
+    for(int i =0; i<= sizeof(newArrayField); i++){
+        field += newArrayField[i];
+    }
+    cout << field;
 }
 
 int ViewGame::KeyPressed() {
