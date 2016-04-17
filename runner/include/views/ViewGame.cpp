@@ -25,8 +25,7 @@ void ViewGame::ShowView(bool jumpCharacter) {
     }else{
         cout << " "<< endl;
     }*/
-    //system("cls");
-    //getch();
+    system("cls");
     cout <<newArrayField[0] << newArrayField[1] << newArrayField[2] << newArrayField[3] << newArrayField[4] <<
     newArrayField[5] << endl;
 }
