@@ -32,7 +32,7 @@ public:
 private:
     Character *character = new Character();
     int speed;
-    int arrayField[5];
+    int *arrayField = new int[5];
 };
 
 #endif // FIELD_H

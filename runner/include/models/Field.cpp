@@ -18,6 +18,9 @@ void Field::createField() {
 void Field::changeField(int newValue) {
     for(int i = 0; i<= sizeof(arrayField); i++){
         arrayField[i] = arrayField[i+1];
+        if(arrayField[0] != 1){
+            arrayField[0] = 2;
+        }
         if(i == sizeof(arrayField)){
             arrayField[i] = newValue;
         }

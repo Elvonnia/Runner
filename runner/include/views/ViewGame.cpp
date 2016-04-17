@@ -22,8 +22,11 @@ void ViewGame::changeFieldDataWithSprites(int *arrayField, bool jumpCharacter) {
 void ViewGame::ShowView(bool jumpCharacter) {
     /*if(jumpCharacter){
         cout<< "JUMP" <<endl;
+    }else{
+        cout << " "<< endl;
     }*/
     //system("cls");
+    //getch();
     cout <<newArrayField[0] << newArrayField[1] << newArrayField[2] << newArrayField[3] << newArrayField[4] <<
     newArrayField[5] << endl;
 }

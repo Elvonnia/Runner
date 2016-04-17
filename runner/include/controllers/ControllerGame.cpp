@@ -6,10 +6,6 @@ ControllerGame::~ControllerGame() {
     //dtor
 }
 
-void ControllerGame::clean(){
-    system("cls");
-}
-
 
 bool ControllerGame::runGame() {
     field->createField();
