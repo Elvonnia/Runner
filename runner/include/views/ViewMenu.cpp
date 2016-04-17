@@ -30,7 +30,7 @@ void ViewMenu::thirdView() {
 }
 
 int ViewMenu::KeyPressed() {
-    int key = getchar();
+    int key = getch();
     if(key == KEY_UP){
         return -1;
     }else if(key == KEY_DOWN){

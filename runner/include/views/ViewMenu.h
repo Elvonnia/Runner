@@ -11,9 +11,9 @@
 #include <stdio.h>
 #include "../utils/ConfigViewMenu.h"
 
-#define KEY_UP 122
-#define KEY_DOWN 115
-#define KEY_ENTER 32
+#define KEY_UP 72
+#define KEY_DOWN 80
+#define KEY_ENTER 13
 
 using namespace std;
 

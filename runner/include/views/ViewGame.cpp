@@ -45,10 +45,13 @@ void ViewGame::ShowView(bool jumpCharacter) {
 }
 
 int ViewGame::KeyPressed() {
-    int key = getchar();
-    if (key == 122) {
+
+    /*if (getch() == 32) {
         return 1;
-    }
+    }else{
+        return 0;
+    }*/
     return 0;
+
 }
 
