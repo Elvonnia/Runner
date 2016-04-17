@@ -5,25 +5,28 @@
 using namespace std;
 
 void Field::createField() {
-    for (int i = 0; i <= sizeof(arrayField); i++) {
-        if(i ==  0){
+    int c = 0;
+    for (int i = 0; i < ConfigSizeField::sizeOfField(); i++) {
+        if(i == 0){
             arrayField[i] = 2;
         }
         else{
             arrayField[i] = 0;
         }
+        c++;
      }
 }
 
 void Field::changeField(int newValue) {
-    for(int i = 0; i<= sizeof(arrayField); i++){
+    for(int i = 0; i< ConfigSizeField::sizeOfField(); i++){
         arrayField[i] = arrayField[i+1];
         if(arrayField[0] != 1){
             arrayField[0] = 2;
         }
-        if(i == sizeof(arrayField)){
+        if(i == ConfigSizeField::sizeOfField()-1){
             arrayField[i] = newValue;
         }
+        //cout << "number: "<<arrayField[i]<<endl;
     }
 
 }

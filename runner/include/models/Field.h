@@ -2,8 +2,11 @@
 #define FIELD_H
 
 #include "../utils/ConfigField.h"
+#include "../utils/ConfigSizeField.h"
 #include "./Character.h"
+
 #include "stdlib.h"
+#include "../views/ViewGame.h"
 #include <stdio.h>
 #include <iostream>
 
@@ -32,7 +35,7 @@ public:
 private:
     Character *character = new Character();
     int speed;
-    int *arrayField = new int[5];
+    int* arrayField = new int[ConfigSizeField::sizeOfField()];
 };
 
 #endif // FIELD_H

@@ -29,5 +29,5 @@ set(SOURCE_FILES runner/include/Main.cpp
         runner/include/views/ViewGame.h
         runner/include/views/ViewMenu.cpp
         runner/include/views/ViewMenu.h
-        )
+        runner/include/utils/ConfigSizeField.h)
 add_executable(Runner ${SOURCE_FILES})

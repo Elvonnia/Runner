@@ -2,6 +2,7 @@
 #define VIEWGAME_H
 
 #include "../utils/ConfigViewGame.h"
+#include "../utils/ConfigSizeField.h"
 #include <conio.h>
 #include <iostream>
 #include <stdio.h>
@@ -32,7 +33,7 @@ private:
     static char character;
     static char obstacle;
     static char empty;
-    static char newArrayField[5];
+    static char *newArrayField;
 };
 
 #endif // VIEWGAME_H
