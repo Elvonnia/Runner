@@ -4,7 +4,7 @@
 class ConfigField{
 public:
     static int speed(){
-        return 5;
+        return 500;
     };
 };
 

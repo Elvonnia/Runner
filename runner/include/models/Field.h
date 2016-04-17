@@ -20,6 +20,10 @@ public:
         return arrayField;
     }
 
+    int GetSpeed(){
+        return speed;
+    }
+
 
     Character GetCharacter(){
         return *character;
@@ -27,7 +31,7 @@ public:
 
 private:
     Character *character = new Character();
-    int m_speed = ConfigField::speed();
+    int speed;
     int arrayField[5];
 };
 

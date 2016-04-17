@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 void Field::createField() {
     for (int i = 0; i <= sizeof(arrayField); i++) {
         if(i ==  0){
