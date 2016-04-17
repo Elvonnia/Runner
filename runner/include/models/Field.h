@@ -41,7 +41,7 @@ public:
     }
 
     void SetCharacterJump(bool value){
-        character->SetAlive(value);
+        character->SetJump(value);
     }
 
 private:

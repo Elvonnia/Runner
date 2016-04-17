@@ -30,6 +30,7 @@ void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) 
 }
 
 void ViewGame::ShowView(bool jumpCharacter) {
+    cout << jumpCharacter << endl;
     system("cls");
     if (jumpCharacter) {
         cout << ' '<< character << endl;
@@ -46,11 +47,14 @@ void ViewGame::ShowView(bool jumpCharacter) {
 
 int ViewGame::KeyPressed() {
 
-    /*if (getch() == 32) {
-        return 1;
-    }else{
-        return 0;
-    }*/
+    if(kbhit()){
+        if (getch() == 32) {
+            cout << "OK"<<endl;
+            return 1;
+        }else{
+            return 0;
+        }
+    }
     return 0;
 
 }
