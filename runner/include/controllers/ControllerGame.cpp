@@ -21,7 +21,7 @@ bool ControllerGame::runGame() {
     }*/
 
     while(field->GetCharacterLife()){
-        Sleep(500);
+        Sleep(250);
         field->changeField(field->createNewValue());
         ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
         ViewGame::ShowView(field->GetCharacterJump());
