@@ -31,6 +31,8 @@ public:
 
 private:
     static char character;
+    static char deadCharacter;
+    static char character2;
     static char obstacle;
     static char empty;
     static char *newArrayField;

@@ -9,10 +9,18 @@ public:
     static char spriteChar(){
         return 'P';
     };
+    static char spriteDeadCharacter(){
+        return 'X';
+    };
+
+    static char spriteChar2(){
+        return 'R';
+    };
 
     static char spriteEmpty(){
         return '_';
     };
+
 
 };
 
