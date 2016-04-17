@@ -18,7 +18,7 @@ void Field::createField() {
 void Field::changeField(int newValue) {
     for (int i = 0; i < ConfigSizeField::sizeOfField(); i++) {
         arrayField[i] = arrayField[i + 1];
-        if (arrayField[0] != 1) {
+        if (arrayField[0] != 1 && !character->GetJump()) {
             arrayField[0] = 2;
         }
         if (i == ConfigSizeField::sizeOfField() - 1) {
@@ -32,8 +32,7 @@ int Field::createNewValue() {
     int random = rand() % 10 + 1;
     if (random == 5) {
         return 1;
-    }
-    else {
+    } else {
         return 0;
     }
 }

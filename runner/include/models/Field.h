@@ -28,8 +28,20 @@ public:
     }
 
 
-    Character GetCharacter(){
-        return *character;
+    bool GetCharacterLife(){
+        return character->GetAlive();
+    }
+
+    void SetCharacterLife(bool value){
+        character->SetAlive(value);
+    }
+
+    bool GetCharacterJump(){
+        return character->GetJump();
+    }
+
+    void SetCharacterJump(bool value){
+        character->SetAlive(value);
     }
 
 private:

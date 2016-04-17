@@ -9,25 +9,21 @@ ControllerGame::~ControllerGame() {
 
 bool ControllerGame::runGame() {
     field->createField();
-    /*ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-    ViewGame::ShowView(field->GetCharacter().GetJump());*/
-    /*while (field->GetCharacter().GetAlive()) {
-        system("cls");
-        if (ViewGame::KeyPressed() == 1) {
-            field->GetCharacter().SetJump(true);
-            ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-            ViewGame::ShowView(field->GetCharacter().GetJump());
-        }
-        ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-        ViewGame::ShowView(field->GetCharacter().GetJump());
-        cout << field->GetCharacter().GetJump()<<endl;
 
-    }*/
-    while(field->GetArrayField()[0] != 1){
+    /*while(field->GetArrayField()[0] ){
         Sleep(500);
         field->changeField(field->createNewValue());
         ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-        ViewGame::ShowView(field->GetCharacter().GetJump());
+        ViewGame::ShowView(field->GetCharacterLife().GetJump());
+    }*/
+    while(field->GetCharacterLife()){
+        Sleep(500);
+        field->changeField(field->createNewValue());
+        ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
+        ViewGame::ShowView(field->GetCharacterJump());
+        if(field->GetArrayField()[0] ==1){
+            field->SetCharacterLife(false);
+        }
     }
     return false;
 }
