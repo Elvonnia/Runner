@@ -6,6 +6,8 @@
 #define RUNNER_MENU_H
 
 #include "../views/ViewMenu.h"
+#include <cstdlib>
+using namespace std;
 
 
 class Menu{

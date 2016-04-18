@@ -6,6 +6,10 @@
 #define RUNNER_CONTROLLERMENU_H
 
 #include "../models/Menu.h"
+#include <stdio.h>
+#include <cstdlib>
+#include <conio.h>
+
 
 
 class ControllerMenu {

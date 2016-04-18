@@ -21,23 +21,30 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/BaseControler.h" />
-		<Unit filename="include/Character.h" />
-		<Unit filename="include/ConfigBase.h" />
-		<Unit filename="include/ConfigChar.h" />
-		<Unit filename="include/ConfigObj.h" />
-		<Unit filename="include/ControlerGame.h" />
-		<Unit filename="include/ControlerUser.h" />
-		<Unit filename="include/Field.h" />
-		<Unit filename="include/Main.h" />
-		<Unit filename="include/Obstacle.h" />
-		<Unit filename="include/ViewGame.h" />
-		<Unit filename="src/Character.cpp" />
-		<Unit filename="src/ControlerGame.cpp" />
-		<Unit filename="src/Field.cpp" />
-		<Unit filename="src/Main.cpp" />
-		<Unit filename="src/Obstacle.cpp" />
-		<Unit filename="src/ViewGame.cpp" />
+		<Unit filename="include/Main.cpp" />
+		<Unit filename="include/controllers/ContollerMenu.cpp" />
+		<Unit filename="include/controllers/ContollerMenu.h" />
+		<Unit filename="include/controllers/ControllerGame.cpp" />
+		<Unit filename="include/controllers/ControllerGame.h" />
+		<Unit filename="include/controllers/ControllerUser.h" />
+		<Unit filename="include/models/Character.cpp" />
+		<Unit filename="include/models/Character.h" />
+		<Unit filename="include/models/Field.cpp" />
+		<Unit filename="include/models/Field.h" />
+		<Unit filename="include/models/Menu.cpp" />
+		<Unit filename="include/models/Menu.h" />
+		<Unit filename="include/models/Obstacle.cpp" />
+		<Unit filename="include/models/Obstacle.h" />
+		<Unit filename="include/utils/ConfigChar.h" />
+		<Unit filename="include/utils/ConfigField.h" />
+		<Unit filename="include/utils/ConfigObj.h" />
+		<Unit filename="include/utils/ConfigSizeField.h" />
+		<Unit filename="include/utils/ConfigViewGame.h" />
+		<Unit filename="include/utils/ConfigViewMenu.h" />
+		<Unit filename="include/views/ViewGame.cpp" />
+		<Unit filename="include/views/ViewGame.h" />
+		<Unit filename="include/views/ViewMenu.cpp" />
+		<Unit filename="include/views/ViewMenu.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
