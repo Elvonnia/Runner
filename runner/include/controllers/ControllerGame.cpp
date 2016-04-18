@@ -1,4 +1,5 @@
 #include "ControllerGame.h"
+
 using namespace std;
 
 
@@ -10,28 +11,19 @@ ControllerGame::~ControllerGame() {
 bool ControllerGame::runGame() {
     field->createField();
 
-    /*while(field->GetCharacterLife()){
-        Sleep(500);
+    while (field->GetCharacterLife()) {
+        Sleep(300);
         field->changeField(field->createNewValue());
         ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
         ViewGame::ShowView(field->GetCharacterJump());
-        if(field->GetArrayField()[0] ==1){
-            field->SetCharacterLife(false);
-        }
-    }*/
 
-    while(field->GetCharacterLife()){
-        Sleep(250);
-        field->changeField(field->createNewValue());
-        ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
-        ViewGame::ShowView(field->GetCharacterJump());
-        if(field->GetCharacterJump()){
+        if(ViewGame::KeyPressed(field->GetCharacterJump()) == 1){
+            field->SetCharacterJump(true);
+            field->SetArrayField(0);
+        }else{
             field->SetCharacterJump(false);
         }
-        if(ViewGame::KeyPressed() == 1){
-            field->SetCharacterJump(true);
-        }
-        if(field->GetArrayField()[0] ==1 && !field->GetCharacterJump()){
+        if (field->GetArrayField()[0] == 1 && !field->GetCharacterJump()) {
             field->SetCharacterLife(false);
         }
     }

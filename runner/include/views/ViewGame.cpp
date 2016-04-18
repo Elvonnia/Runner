@@ -19,7 +19,7 @@ void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) 
                 newArrayField[i] = character2;
             }
 
-        } else if (arrayField[0] == 1 && !jumpCharacter) {
+        } else if (arrayField[0] == 1 && arrayField[2]!= 2) {
             newArrayField[0] = deadCharacter;
         } else if (arrayField[i] == 1) {
             newArrayField[i] = obstacle;
@@ -30,7 +30,6 @@ void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) 
 }
 
 void ViewGame::ShowView(bool jumpCharacter) {
-    cout << jumpCharacter << endl;
     system("cls");
     if (jumpCharacter) {
         cout << ' '<< character << endl;
@@ -45,10 +44,10 @@ void ViewGame::ShowView(bool jumpCharacter) {
     cout << field << endl;
 }
 
-int ViewGame::KeyPressed() {
+int ViewGame::KeyPressed(bool jump) {
 
     if(kbhit()){
-        if (getch() == 32) {
+        if (getch() == 32 && !jump) {
             return 1;
         }else{
             return 0;

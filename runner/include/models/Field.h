@@ -23,6 +23,10 @@ public:
         return arrayField;
     }
 
+    void SetArrayField(int value){
+        arrayField[0] = value;
+    }
+
     int GetSpeed(){
         return speed;
     }

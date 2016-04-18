@@ -26,7 +26,7 @@ public:
         return empty;
     };
 
-    static int KeyPressed();
+    static int KeyPressed(bool jump);
 
 
 private:
