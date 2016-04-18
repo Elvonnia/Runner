@@ -38,12 +38,9 @@ void Field::changeField(int newValue) {
 int Field::createNewValue() {
 
     int random = rand() % 10 + 1;
-    cout<<random<<endl;
     if (random == 5) {
-        cout <<"YOOOO"<<endl;
         return 1;
     } else {
-        cout<<"OOOYYYY"<<endl;
         return 0;
     }
 }
