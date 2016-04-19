@@ -14,11 +14,13 @@ public:
     /** Default constructor */
     /** Default destructor */
     virtual ~ControllerGame();
+    void GameOver() const;
 
 protected:
 private:
     double score;
     Field *field = new Field();
+
 
 };
 

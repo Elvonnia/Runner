@@ -19,7 +19,7 @@ void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) 
                 newArrayField[i] = character2;
             }
 
-        } else if (arrayField[0] == 1 && arrayField[2]!= 2) {
+        } else if (arrayField[0] == 1 && !jumpCharacter) {
             newArrayField[0] = deadCharacter;
         } else if (arrayField[i] == 1) {
             newArrayField[i] = obstacle;
