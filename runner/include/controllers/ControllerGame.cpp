@@ -14,17 +14,18 @@ bool ControllerGame::runGame() {
         Sleep(300);
         field->changeField(field->createNewValue());
         ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
-        ViewGame::ShowView(field->GetCharacterJump());
+        ViewGame::ShowView(field->GetCharacterJump(), field->GetCharacterScore());
         GameOver();
 
-        if(ViewGame::KeyPressed(field->GetCharacterJump()) == 1){
+        if (ViewGame::KeyPressed(field->GetCharacterJump()) == 1) {
             field->SetCharacterJump(true);
             field->SetArrayField(0);
 
-        }else{
+        } else {
             field->SetCharacterJump(false);
         }
 
+        field->SetCharacterScore(field->GetCharacterScore() + 2);
 
     }
     return false;
@@ -32,7 +33,9 @@ bool ControllerGame::runGame() {
 
 void ControllerGame::GameOver() const {
     if (field->GetArrayField()[0] == 1 && !field->GetCharacterJump()) {
-            field->SetCharacterLife(false);
-        }
+        field->SetCharacterLife(false);
+        ViewGame::ShowViewGameOver();
+        getch();
+    }
 }
 

@@ -48,6 +48,14 @@ public:
         character->SetJump(value);
     }
 
+    long GetCharacterScore(){
+        return character->GetScore();
+    }
+
+    void SetCharacterScore(long score){
+        character->SetScore(score);
+    }
+
 private:
     Character *character = new Character();
     int speed;

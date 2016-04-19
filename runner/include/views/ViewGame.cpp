@@ -29,7 +29,7 @@ void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) 
     }
 }
 
-void ViewGame::ShowView(bool jumpCharacter) {
+void ViewGame::ShowView(bool jumpCharacter, long score) {
     system("cls");
     if (jumpCharacter) {
         cout << ' '<< character << endl;
@@ -41,7 +41,12 @@ void ViewGame::ShowView(bool jumpCharacter) {
     for (int i = 0; i < ConfigSizeField::sizeOfField(); i++) {
         field += newArrayField[i];
     }
-    cout << field << endl;
+    cout << field << endl<<endl;
+    cout << score << " meter"<< endl <<endl;
+}
+
+void ViewGame::ShowViewGameOver() {
+    cout << "press any key to continue"<< endl;
 }
 
 int ViewGame::KeyPressed(bool jump) {

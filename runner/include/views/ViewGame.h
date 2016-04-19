@@ -12,7 +12,9 @@ class ViewGame {
 public:
     static void changeFieldDataWithSprites(int arrayField[], bool jumpCharacter);
 
-    static void ShowView(bool jumpCharacter);
+    static void ShowView(bool jumpCharacter, long score);
+
+    static void ShowViewGameOver();
 
     static char GetCharacter(){
         return character;
