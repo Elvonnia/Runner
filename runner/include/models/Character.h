@@ -1,12 +1,8 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include "../utils/ConfigChar.h"
-
 class Character {
 private:
-    int m_posY;
-    int m_posX;
     bool m_jump;
     bool m_alive;
     int m_score;

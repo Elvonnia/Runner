@@ -18,18 +18,6 @@ public:
 
     static void ShowViewStop();
 
-    static char GetCharacter(){
-        return character;
-    }
-
-    static char GetObstacle(){
-        return obstacle;
-    }
-
-    static char GetEmpty(){
-        return empty;
-    };
-
     static int KeyPressed(bool jump);
 
 
