@@ -42,7 +42,7 @@ void ViewGame::ShowView(bool jumpCharacter, long score) {
         field += newArrayField[i];
     }
     cout << field << endl<<endl;
-    cout << score << " meter"<< endl <<endl;
+    cout << score << " meters"<< endl <<endl;
 }
 
 void ViewGame::ShowViewGameOver() {
@@ -67,7 +67,6 @@ int ViewGame::KeyPressed(bool jump) {
         }else{
             return 0;
         }
-
     }
     return 0;
 
