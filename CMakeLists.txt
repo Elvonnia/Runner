@@ -8,7 +8,6 @@ set(SOURCE_FILES runner/include/Main.cpp
         runner/include/controllers/ContollerMenu.h
         runner/include/controllers/ControllerGame.cpp
         runner/include/controllers/ControllerGame.h
-        runner/include/controllers/ControllerUser.h
 
         runner/include/models/Character.cpp
         runner/include/models/Character.h
@@ -29,5 +28,5 @@ set(SOURCE_FILES runner/include/Main.cpp
         runner/include/views/ViewGame.h
         runner/include/views/ViewMenu.cpp
         runner/include/views/ViewMenu.h
-        )
+        runner/include/utils/ConfigSizeField.h)
 add_executable(Runner ${SOURCE_FILES})

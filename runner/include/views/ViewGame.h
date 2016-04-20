@@ -1,16 +1,22 @@
 #ifndef VIEWGAME_H
 #define VIEWGAME_H
 
-#include <iostream>
-
 #include "../utils/ConfigViewGame.h"
+#include "../utils/ConfigSizeField.h"
+#include <conio.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
 class ViewGame {
 public:
-
     static void changeFieldDataWithSprites(int arrayField[], bool jumpCharacter);
 
-    static void ShowView(bool jumpCharacter);
+    static void ShowView(bool jumpCharacter, long score);
+
+    static void ShowViewGameOver();
+
+    static void ShowViewStop();
 
     static char GetCharacter(){
         return character;
@@ -24,14 +30,16 @@ public:
         return empty;
     };
 
-    static int KeyPressed();
+    static int KeyPressed(bool jump);
 
 
 private:
     static char character;
+    static char deadCharacter;
+    static char character2;
     static char obstacle;
     static char empty;
-    static char newArrayField[5];
+    static char *newArrayField;
 };
 
 #endif // VIEWGAME_H

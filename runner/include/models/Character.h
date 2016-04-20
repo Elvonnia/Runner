@@ -7,10 +7,12 @@ class Character {
 private:
     int m_posY;
     int m_posX;
-    bool m_jump = false;
-    bool m_alive = true;
+    bool m_jump;
+    bool m_alive;
+    int m_score;
 
 public:
+    Character();
     bool GetAlive() {
         return m_alive;
     }
@@ -26,6 +28,14 @@ public:
     void SetJump(bool jump){
         m_jump = jump;
     };
+
+    long GetScore(){
+        return m_score;
+    }
+
+    void SetScore(long score){
+        m_score = score;
+    }
 
 
 };

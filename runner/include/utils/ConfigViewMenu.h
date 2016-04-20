@@ -20,7 +20,7 @@ public:
         vector<string> options;
         options.push_back("Play");
         options.push_back("Help");
-        options.push_back("About");
+        options.push_back("Exit");
         return options;
     }
 };

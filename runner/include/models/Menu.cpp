@@ -1,7 +1,7 @@
 //
 // Created by Guillaume on 03/04/2016.
 //
-
+using namespace std;
 #include "Menu.h"
 
 void Menu::viewToShow() {

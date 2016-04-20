@@ -2,36 +2,74 @@
 
 using namespace std;
 char ViewGame::character = ConfigViewGame::spriteChar();
+char ViewGame::character2 = ConfigViewGame::spriteChar2();
+char ViewGame::deadCharacter = ConfigViewGame::spriteDeadCharacter();
 char ViewGame::obstacle = ConfigViewGame::spriteObj();
 char ViewGame::empty = ConfigViewGame::spriteEmpty();
-char ViewGame::newArrayField[5];
+char *ViewGame::newArrayField = new char[ConfigSizeField::sizeOfField()];
 
 
-void ViewGame::changeFieldDataWithSprites(int *arrayField, bool jumpCharacter) {
-    for(int i = 0; i < sizeof(arrayField); i++){
-        if(arrayField[i] == 2 && !jumpCharacter){
-            newArrayField[i] = character;
-        }else if(arrayField[i] == 1){
+void ViewGame::changeFieldDataWithSprites(int arrayField[], bool jumpCharacter) {
+
+    for (int i = 0; i < ConfigSizeField::sizeOfField(); i++) {
+        if (arrayField[i] == 2 && !jumpCharacter) {
+            if (newArrayField[i] == character2) {
+                newArrayField[i] = character;
+            } else {
+                newArrayField[i] = character2;
+            }
+
+        } else if (arrayField[0] == 1 && !jumpCharacter) {
+            newArrayField[0] = deadCharacter;
+        } else if (arrayField[i] == 1) {
             newArrayField[i] = obstacle;
-        }else{
+        } else {
             newArrayField[i] = empty;
         }
     }
 }
 
-void ViewGame::ShowView(bool jumpCharacter) {
-    if(jumpCharacter){
-        cout<< "JUMP" <<endl;
+void ViewGame::ShowView(bool jumpCharacter, long score) {
+    system("cls");
+    if (jumpCharacter) {
+        cout << ' '<< character << endl;
+    } else {
+        cout << ' ' << endl;
     }
-    cout <<newArrayField[0] << newArrayField[1] << newArrayField[2] << newArrayField[3] << newArrayField[4] <<
-    newArrayField[5] << endl;
+
+    string field = "";
+    for (int i = 0; i < ConfigSizeField::sizeOfField(); i++) {
+        field += newArrayField[i];
+    }
+    cout << field << endl<<endl;
+    cout << score << " meter"<< endl <<endl;
 }
 
-int ViewGame::KeyPressed() {
-    int key = getchar();
-    if(key == 122){
-        return 1;
+void ViewGame::ShowViewGameOver() {
+    cout << "press any key to continue"<< endl;
+}
+
+
+void ViewGame::ShowViewStop() {
+    cout << "PAUSE" << endl;
+    cout << "press enter to continue" << endl;
+}
+
+int ViewGame::KeyPressed(bool jump) {
+
+    if(kbhit()){
+        int key = getch();
+        if (key == 32 && !jump) {
+            return 1;
+        }
+        if(key == 112){
+            return 2;
+        }else{
+            return 0;
+        }
+
     }
     return 0;
+
 }
 

@@ -9,19 +9,37 @@ ControllerGame::~ControllerGame() {
 
 bool ControllerGame::runGame() {
     field->createField();
-    ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-    ViewGame::ShowView(field->GetCharacter().GetJump());
-    while (field->GetCharacter().GetAlive()) {
-        system("cls");
-        /*if (ViewGame::KeyPressed() == 1) {
-            field->GetCharacter().SetJump(true);
-            ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-            ViewGame::ShowView(field->GetCharacter().GetJump());
-        }
-        ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacter().GetJump());
-        ViewGame::ShowView(field->GetCharacter().GetJump());
-        cout << field->GetCharacter().GetJump()<<endl;*/
+    while (field->GetCharacterLife()) {
+        Sleep(300);
+        field->changeField(field->createNewValue());
+        ViewGame::changeFieldDataWithSprites(field->GetArrayField(), field->GetCharacterJump());
+        ViewGame::ShowView(field->GetCharacterJump(), field->GetCharacterScore());
+        checkIfGameOver();
+        keyEvent();
+        field->SetCharacterScore(field->GetCharacterScore() + 2);
+
     }
     return false;
+}
+
+void ControllerGame::keyEvent() const {
+    if (ViewGame::KeyPressed(field->GetCharacterJump()) == 1) {
+            field->SetCharacterJump(true);
+            field->SetArrayField(0);
+
+        } else if (ViewGame::KeyPressed(field->GetCharacterJump()) == 2 && field->GetCharacterLife()) {
+            ViewGame::ShowViewStop();
+            while (getch() != 13);
+        } else {
+            field->SetCharacterJump(false);
+        }
+}
+
+void ControllerGame::checkIfGameOver() const {
+    if (field->GetArrayField()[0] == 1 && !field->GetCharacterJump()) {
+        field->SetCharacterLife(false);
+        ViewGame::ShowViewGameOver();
+        while (getch() == 32);
+    }
 }
 

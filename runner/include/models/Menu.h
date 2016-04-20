@@ -6,6 +6,8 @@
 #define RUNNER_MENU_H
 
 #include "../views/ViewMenu.h"
+#include <cstdlib>
+using namespace std;
 
 
 class Menu{
@@ -13,6 +15,10 @@ public:
 
     int GetHaveMakeAChoice(){
         return haveMakeAChoice;
+    }
+
+    void SetHaveMakeAChoise(bool value){
+        haveMakeAChoice = value;
     }
 
     void viewToShow();

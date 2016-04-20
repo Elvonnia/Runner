@@ -1,9 +1,10 @@
 #ifndef CONTROLLERGAME_H
 #define CONTROLLERGAME_H
 
-#include "ControllerUser.h"
 #include "../models/Field.h"
+
 #include <iostream>
+#include <windows.h>
 
 class ControllerGame {
 public:
@@ -12,12 +13,13 @@ public:
     /** Default constructor */
     /** Default destructor */
     virtual ~ControllerGame();
+    void checkIfGameOver() const;
+    void keyEvent() const;
 
 protected:
 private:
     double score;
     Field *field = new Field();
-
 };
 
 #endif // CONTROLLER_H

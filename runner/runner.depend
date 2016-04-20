@@ -29,3 +29,92 @@
 	"../include/ControlerGame.h"
 	<iostream>
 
+1460818951 source:d:\game project\runner\runner\include\controllers\contollermenu.cpp
+	"ContollerMenu.h"
+
+1460906976 d:\game project\runner\runner\include\controllers\contollermenu.h
+	"../models/Menu.h"
+	<stdio.h>
+	<cstdlib>
+	<conio.h>
+
+1460982350 d:\game project\runner\runner\include\models\menu.h
+	"../views/ViewMenu.h"
+	<cstdlib>
+
+1460981465 d:\game project\runner\runner\include\views\viewmenu.h
+	<conio.h>
+	<iostream>
+	<stdio.h>
+	"../utils/ConfigViewMenu.h"
+
+1460981465 d:\game project\runner\runner\include\utils\configviewmenu.h
+	<iostream>
+	<string>
+	<vector>
+
+1460901814 source:d:\game project\runner\runner\include\main.cpp
+	<iostream>
+	"./controllers/ContollerMenu.h"
+	"controllers/ControllerGame.h"
+
+1460906217 d:\game project\runner\runner\include\controllers\controllergame.h
+	"ControllerUser.h"
+	"../models/Field.h"
+	<iostream>
+	<windows.h>
+
+1460818951 d:\game project\runner\runner\include\controllers\controlleruser.h
+	"../views/ViewGame.h"
+
+1460981465 d:\game project\runner\runner\include\views\viewgame.h
+	"../utils/ConfigViewGame.h"
+	"../utils/ConfigSizeField.h"
+	<conio.h>
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1460981465 d:\game project\runner\runner\include\utils\configviewgame.h
+
+1460981465 d:\game project\runner\runner\include\models\field.h
+	"../utils/ConfigField.h"
+	"../utils/ConfigSizeField.h"
+	"./Character.h"
+	"stdlib.h"
+	"../views/ViewGame.h"
+	<stdio.h>
+	<iostream>
+
+1460902335 d:\game project\runner\runner\include\utils\configfield.h
+
+1460981465 d:\game project\runner\runner\include\models\character.h
+	"../utils/ConfigChar.h"
+
+1460818951 d:\game project\runner\runner\include\utils\configchar.h
+
+1460981465 source:d:\game project\runner\runner\include\models\character.cpp
+	"./Character.h"
+	<iostream>
+
+1460407393 source:d:\game project\runner\runner\include\models\obstacle.cpp
+	"./Obstacle.h"
+	<iostream>
+
+1460818951 d:\game project\runner\runner\include\models\obstacle.h
+	"../utils/ConfigObj.h"
+
+1460818951 d:\game project\runner\runner\include\utils\configobj.h
+
+1460818951 source:d:\game project\runner\runner\include\views\viewmenu.cpp
+	"ViewMenu.h"
+
+1460981465 source:d:\game project\runner\runner\include\controllers\controllergame.cpp
+	"ControllerGame.h"
+
+1460981465 source:d:\game project\runner\runner\include\models\field.cpp
+	"./Field.h"
+	"../views/ViewGame.h"
+
+1460981465 d:\game project\runner\runner\include\utils\configsizefield.h
+
