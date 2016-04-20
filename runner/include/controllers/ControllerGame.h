@@ -1,7 +1,6 @@
 #ifndef CONTROLLERGAME_H
 #define CONTROLLERGAME_H
 
-#include "ControllerUser.h"
 #include "../models/Field.h"
 
 #include <iostream>
@@ -14,14 +13,13 @@ public:
     /** Default constructor */
     /** Default destructor */
     virtual ~ControllerGame();
-    void GameOver() const;
+    void checkIfGameOver() const;
+    void keyEvent() const;
 
 protected:
 private:
     double score;
     Field *field = new Field();
-
-
 };
 
 #endif // CONTROLLER_H

@@ -16,6 +16,8 @@ public:
 
     static void ShowViewGameOver();
 
+    static void ShowViewStop();
+
     static char GetCharacter(){
         return character;
     }

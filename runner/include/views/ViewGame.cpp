@@ -49,14 +49,25 @@ void ViewGame::ShowViewGameOver() {
     cout << "press any key to continue"<< endl;
 }
 
+
+void ViewGame::ShowViewStop() {
+    cout << "PAUSE" << endl;
+    cout << "press enter to continue" << endl;
+}
+
 int ViewGame::KeyPressed(bool jump) {
 
     if(kbhit()){
-        if (getch() == 32 && !jump) {
+        int key = getch();
+        if (key == 32 && !jump) {
             return 1;
+        }
+        if(key == 112){
+            return 2;
         }else{
             return 0;
         }
+
     }
     return 0;
 

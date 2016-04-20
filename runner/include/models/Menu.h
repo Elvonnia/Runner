@@ -17,6 +17,10 @@ public:
         return haveMakeAChoice;
     }
 
+    void SetHaveMakeAChoise(bool value){
+        haveMakeAChoice = value;
+    }
+
     void viewToShow();
 
     void enterToGame();

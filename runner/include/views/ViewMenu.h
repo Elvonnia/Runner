@@ -14,6 +14,7 @@
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_ENTER 13
+#define KEY_LEFT 75
 
 using namespace std;
 
@@ -28,6 +29,8 @@ public:
     static void secondView();
 
     static void thirdView();
+
+    static void HelpView();
 
     static int KeyPressed();
 

@@ -16,7 +16,7 @@ void ViewMenu::defaultView() {
 }
 
 void ViewMenu::secondView() {
-    cout<< options[0] << endl;
+    cout << options[0] << endl;
     cout << pointeur << " " << options[1] << endl;
     cout << options[2] << endl;
     actualView = 2;
@@ -29,13 +29,21 @@ void ViewMenu::thirdView() {
     actualView = 3;
 }
 
+void ViewMenu::HelpView() {
+    cout << "Press SPACE to jump!" << endl << endl;
+    cout << "In Game press p to pause game and press any key to continue" << endl << endl;
+    cout << "press Left to quit this menu" << endl << endl;
+}
+
 int ViewMenu::KeyPressed() {
     int key = getch();
-    if(key == KEY_UP){
+    if (key == KEY_UP) {
         return -1;
-    }else if(key == KEY_DOWN){
+    } else if (key == KEY_DOWN) {
         return 1;
-    }else if (key == KEY_ENTER){
+    } else if (key == KEY_ENTER) {
         return 2;
+    } else if (key == KEY_LEFT) {
+        return 3;
     }
 }
