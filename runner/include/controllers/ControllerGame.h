@@ -18,7 +18,6 @@ public:
 
 protected:
 private:
-    double score;
     Field *field = new Field();
 };
 

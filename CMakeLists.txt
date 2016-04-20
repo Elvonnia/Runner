@@ -15,12 +15,8 @@ set(SOURCE_FILES runner/include/Main.cpp
         runner/include/models/Field.h
         runner/include/models/Menu.cpp
         runner/include/models/Menu.h
-        runner/include/models/Obstacle.cpp
-        runner/include/models/Obstacle.h
 
-        runner/include/utils/ConfigChar.h
         runner/include/utils/ConfigField.h
-        runner/include/utils/ConfigObj.h
         runner/include/utils/ConfigViewGame.h
         runner/include/utils/ConfigViewMenu.h
 

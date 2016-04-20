@@ -23,11 +23,6 @@ public:
 
     void viewToShow();
 
-    void enterToGame();
-
-    void EnterToHelp();
-
-    void EnterToAbout();
 
 private:
     int haveMakeAChoice = false;
