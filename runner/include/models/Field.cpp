@@ -35,7 +35,7 @@ void Field::changeField(int newValue) {
 
 int Field::createNewValue() {
     int random = rand() % 10 + 1;
-    if (random == 5) {
+    if (random == 5 || random == 6) {
         return 1;
     } else {
         return 0;

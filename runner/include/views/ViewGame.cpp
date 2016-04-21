@@ -55,15 +55,16 @@ void ViewGame::ShowViewStop() {
     cout << "press enter to continue" << endl;
 }
 
-int ViewGame::KeyPressed(bool jump) {
+int ViewGame::KeyPressed() {
 
     if(kbhit()){
         int key = getch();
-        if (key == 32 && !jump) {
+        if (key == 32) {
             return 1;
         }
-        if(key == 112){
-            return 2;
+        else if(key == 112){
+            ShowViewStop();
+            while (getch() != 13);
         }else{
             return 0;
         }

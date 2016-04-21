@@ -31,7 +31,7 @@ void ViewMenu::thirdView() {
 
 void ViewMenu::HelpView() {
     cout << "Press SPACE to jump!" << endl << endl;
-    cout << "In Game press two time p to pause game and press enter to continue" << endl << endl;
+    cout << "In Game press p to pause game and press enter to continue" << endl << endl;
     cout << "press Left to quit this menu" << endl << endl;
 }
 
@@ -46,4 +46,5 @@ int ViewMenu::KeyPressed() {
     } else if (key == KEY_LEFT) {
         return 3;
     }
+    return 0;
 }

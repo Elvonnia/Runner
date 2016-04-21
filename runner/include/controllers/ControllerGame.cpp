@@ -23,16 +23,13 @@ bool ControllerGame::runGame() {
 }
 
 void ControllerGame::keyEvent() const {
-    if (ViewGame::KeyPressed(field->GetCharacterJump()) == 1) {
-            field->SetCharacterJump(true);
-            field->SetArrayField(0);
+    if (ViewGame::KeyPressed() == 1 && !field->GetCharacterJump()) {
+        field->SetCharacterJump(true);
+        field->SetArrayField(0);
 
-        } else if (ViewGame::KeyPressed(field->GetCharacterJump()) == 2 && field->GetCharacterLife()) {
-            ViewGame::ShowViewStop();
-            while (getch() != 13);
-        } else {
-            field->SetCharacterJump(false);
-        }
+    } else {
+        field->SetCharacterJump(false);
+    }
 }
 
 void ControllerGame::checkIfGameOver() const {
