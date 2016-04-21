@@ -18,7 +18,7 @@ public:
 
     static void ShowViewStop();
 
-    static int KeyPressed(bool jump);
+    static int KeyPressed();
 
 
 private:
