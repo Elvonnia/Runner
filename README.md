@@ -1,9 +1,5 @@
 # Runner
 C++ Runner
-
-# Contributeurs:
-  - Kimberley OHANA
-  - Guillaume NOUGIER
   
 # Présentation:
   Jeu Runner en mode console avec le langage C++  sous format d'une architecture MVC (Models/Views/Controllers)
